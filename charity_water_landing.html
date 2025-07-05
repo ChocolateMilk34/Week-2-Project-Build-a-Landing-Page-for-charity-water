@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity:Water</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #76AABF;
+      --yellow: #FFD541;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+      --black: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--gray);
+      color: var(--black);
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    header img {
+      height: 24px;
+      margin-right: 0.5rem;
+    }
+
+    .hero {
+      background-color: var(--blue);
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: var(--white);
+      max-width: 500px;
+    }
+
+    .donate-box {
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 500px;
+    }
+
+    .donate-box span {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .donate-box button {
+      background-color: var(--yellow);
+      border: none;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .image-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .caption {
+      color: var(--white);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .hero-content {
+        width: 50%;
+      }
+
+      .image-section {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Charity_Water_logo.svg/2560px-Charity_Water_logo.svg.png" alt="Charity:Water Logo" />
+    Charity:Water
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>See the Change You Make</h1>
+      <p>Join a global movement bringing clean water to communities in need — with 100% of your donation funding real projects and real impact, all tracked and reported transparently.</p>
+      <div class="donate-box">
+        <span>Donate Your Coffee Money</span>
+        <button>Donate</button>
+      </div>
+    </div>
+    <div class="image-section">
+      <img src="https://i.imgur.com/GEQYtJw.jpg" alt="Girl with water jug" />
+      <div class="caption">Be a part of something greater...</div>
+    </div>
+  </section>
+</body>
+</html>
