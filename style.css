@@ -26,6 +26,15 @@ header {
   gap: 1rem;
 }
 
+header img {
+  height: 32px;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
 .hero {
   background-color: var(--blue);
   padding: 4rem 2rem;
@@ -35,6 +44,7 @@ header {
   justify-content: center;
   text-align: left;
   gap: 2rem;
+  min-height: 70vh;
 }
 
 .hero-content {
@@ -93,6 +103,14 @@ header {
   color: white;
   margin-top: 0.5rem;
   font-size: 0.9rem;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--black);
 }
 
 @media (min-width: 768px) {
