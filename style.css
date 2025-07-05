@@ -1,9 +1,8 @@
 :root {
-  --blue: #76AABF;
-  --yellow: #FFD541;
-  --white: #ffffff;
-  --gray: #f5f5f5;
-  --black: #111;
+  --yellow: #FFC907;
+  --blue: #77A8B8;
+  --cream: #FFF7E1;
+  --black: #333;
 }
 
 * {
@@ -13,107 +12,102 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--gray);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cream);
   color: var(--black);
+  line-height: 1.6;
 }
 
 header {
-  background-color: var(--white);
   padding: 1rem 2rem;
+  background-color: white;
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-header img {
-  height: 24px;
-  margin-right: 0.5rem;
+  gap: 1rem;
 }
 
 .hero {
   background-color: var(--blue);
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: left;
-}
-
-.hero-content {
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
+.hero-content {
+  max-width: 600px;
+}
+
 .hero h1 {
-  font-size: 3rem;
-  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: var(--white);
+  color: white;
 }
 
 .hero p {
+  color: white;
   font-size: 1rem;
-  color: var(--white);
-  max-width: 500px;
+  margin-top: 1rem;
 }
 
 .donate-box {
-  background-color: var(--white);
+  background: white;
   padding: 1rem;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  max-width: 400px;
 }
 
 .donate-box span {
-  font-size: 1rem;
+  flex: 1;
   font-weight: 500;
 }
 
 .donate-box button {
   background-color: var(--yellow);
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .image-section {
-  margin-top: 2rem;
+  max-width: 400px;
   text-align: center;
 }
 
 .image-section img {
   max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .caption {
-  color: var(--white);
-  font-size: 0.9rem;
+  color: white;
   margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {
   .hero {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     text-align: left;
   }
 
   .hero-content {
-    width: 50%;
+    max-width: 500px;
   }
 
   .image-section {
-    width: 45%;
+    text-align: right;
   }
 }
