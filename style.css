@@ -1,10 +1,13 @@
+/* Root Variables */
 :root {
   --yellow: #FFC907;
   --blue: #77A8B8;
   --cream: #FFF7E1;
   --black: #333;
+  --white: #fff;
 }
 
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,77 +21,102 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  padding: 1rem 2rem;
-  background-color: white;
+  background-color: var(--white);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 header img {
   height: 32px;
+  margin-right: 10px;
 }
 
 header span {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  color: var(--black);
 }
 
+/* Hero Section */
 .hero {
   background-color: var(--blue);
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: left;
-  gap: 2rem;
-  min-height: 70vh;
+  gap: 3rem;
+  text-align: center;
 }
 
 .hero-content {
   max-width: 600px;
+  color: var(--white);
+  position: relative;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  color: white;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.hero h1:hover {
+  transform: scale(1.03);
+}
+
+.highlight {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 0 0.4rem;
+  border-radius: 4px;
 }
 
 .hero p {
-  color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
 }
 
+/* Call-to-Action */
 .donate-box {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-top: 1.5rem;
-  max-width: 400px;
+  margin-top: 2rem;
+  max-width: 420px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .donate-box span {
   flex: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.donate-box button {
+.cta-button {
   background-color: var(--yellow);
+  color: var(--black);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.cta-button:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px);
+}
+
+/* Image Section */
 .image-section {
   max-width: 400px;
   text-align: center;
@@ -96,23 +124,30 @@ header span {
 
 .image-section img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.02);
 }
 
 .caption {
-  color: white;
+  color: var(--white);
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
 
+/* Footer */
 footer {
-  background-color: white;
+  background-color: var(--white);
   text-align: center;
   padding: 1rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--black);
 }
 
+/* Responsive Layout */
 @media (min-width: 768px) {
   .hero {
     flex-direction: row;
@@ -122,7 +157,7 @@ footer {
   }
 
   .hero-content {
-    max-width: 500px;
+    text-align: left;
   }
 
   .image-section {
