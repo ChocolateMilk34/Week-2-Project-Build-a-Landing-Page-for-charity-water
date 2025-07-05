@@ -1,33 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charity:Water</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff7e1;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    header img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    header span {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      background-color: #77a8b8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+    }
+
+    .hero-content {
+      max-width: 500px;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .donate-box {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 400px;
+    }
+
+    .donate-box button {
+      background-color: #ffc907;
+      color: black;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .donate-box button:hover {
+      background-color: #e6b800;
+    }
+
+    .image-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .caption {
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-content, .image-section {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Charity_Water_logo.svg/2560px-Charity_Water_logo.svg.png" alt="Charity:Water Logo" />
-    Charity:Water
+    <span>Charity:Water</span>
   </header>
 
   <section class="hero">
     <div class="hero-content">
       <h1>See the Change You Make</h1>
-      <p>
-        Join a global movement bringing clean water to communities in need —
-        with 100% of your donation funding real projects and real impact, all
-        tracked and reported transparently.
-      </p>
+      <p>Join a global movement bringing clean water to communities in need — with 100% of your donation funding real projects and real impact, all tracked and reported transparently.</p>
       <div class="donate-box">
         <span>Donate Your Coffee Money</span>
         <button>Donate</button>
       </div>
     </div>
+
     <div class="image-section">
-      <img src="https://i.imgur.com/GEQYtJw.jpg" alt="Girl with water jug" />
+      <img src="img/smiling-woman.jpg" alt="Smiling woman with clean water access">
       <div class="caption">Be a part of something greater...</div>
     </div>
   </section>
