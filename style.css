@@ -23,13 +23,14 @@ body {
 }
 
 /* HEADER */
+/* Header Styling */
 header {
-  background-color: var(--white);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 4px solid var(--cream);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid var(--cream);
 }
 
 .logo-container {
@@ -38,17 +39,32 @@ header {
   gap: 0.75rem;
 }
 
-.logo {
-  height: 48px;
+.logo-container img {
+  height: 48px; /* Bump this to make it bigger */
   width: auto;
-  max-width: 100%;
-  object-fit: contain;
 }
 
-.brand-name {
+.logo-container span {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--black);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--yellow);
 }
 
 /* HERO SECTION */
