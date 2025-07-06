@@ -4,37 +4,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 25px 60px;
   border-bottom: 4px solid #fcd900;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 
 .brand {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: #333;
 }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 32px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 /* Hero Section */
@@ -42,10 +42,10 @@
   background-color: #77aaba;
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 40px;
+  padding: 80px 60px;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
 }
 
 .hero-content {
@@ -54,37 +54,78 @@
 }
 
 .hero-content h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   line-height: 1.2;
+  font-family: 'Lora', serif;
 }
 
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Donate Box */
 .donate-box {
-  margin-top: 20px;
-  background: #f3f3f3;
-  padding: 10px 20px;
-  border-radius: 10px;
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   max-width: fit-content;
-  color: #333;
+  color: #222;
   font-weight: 600;
 }
 
 .donate-box span {
-  color: #333;
+  color: #222;
 }
 
+button {
+  background-color: #fcd900;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Image */
 .hero-image img {
-  width: 250px;
-  height: auto;
+  width: 220px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .caption {
   margin-top: 10px;
   color: #f3f3f3;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-align: center;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
