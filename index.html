@@ -3,44 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charity:Water</title>
-  <meta name="description" content="Join the movement to bring clean water to communities in need. 100% of donations go to real projects." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Charity:Water — See the Change</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.ico" />
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
-    <div class="logo-container">
-      <img src="img/image.png" alt="Charity:Water logo" class="logo" />
-      <span class="brand-name">Charity:Water</span>
+    <div class="container header-content">
+      <img src="img/logo.png" alt="Charity:Water logo" class="logo" />
+      <span class="brand">Charity:Water</span>
+      <nav class="nav-links">
+        <a href="#impact">Impact</a>
+        <a href="#learn">Learn</a>
+        <a href="#donate" class="donate-link">Donate</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1><span>See the Change</span> You Make</h1>
+  <!-- HERO -->
+  <section class="hero fade-in">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>See the Change <br /> You Make</h1>
         <p>
-          Join a global movement bringing clean water to communities in need — 
-          with <strong>100%</strong> of your donation funding real projects and real impact,
-          all tracked and reported transparently.
+          Clean water transforms lives. Your donation funds real projects, creates sustainable access, and is tracked every step of the way — with 100% impact.
         </p>
-        <div class="donate-box">
-          <span>Donate Your Coffee Money</span>
-          <button aria-label="Donate to Charity:Water">Donate</button>
+        <div class="cta-group">
+          <a href="#donate" class="btn-primary">Donate</a>
+          <a href="#learn" class="btn-secondary">Learn More</a>
         </div>
       </div>
 
-      <div class="image-section">
-        <img src="img/ChatGPT Image Jun 28, 2025, 05_27_50 PM.png" alt="Smiling woman with clean water access" class="hero-image" />
-        <div class="caption">Be a part of something greater...</div>
+      <div class="hero-image">
+        <img src="img/smiling-woman.png" alt="Smiling woman with clean water access" />
+        <p class="caption">Be a part of something greater...</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- IMPACT SECTION -->
+  <section class="impact-section" id="impact">
+    <div class="container fade-in">
+      <h2>Every Drop Counts</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <h3>100%</h3>
+          <p>Of donations go directly to clean water projects</p>
+        </div>
+        <div class="impact-item">
+          <h3>29 Countries</h3>
+          <p>Served through community-based water access</p>
+        </div>
+        <div class="impact-item">
+          <h3>15M+</h3>
+          <p>People reached and lives improved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARN MORE SECTION -->
+  <section class="learn-section" id="learn">
+    <div class="container fade-in">
+      <h2>Why Water?</h2>
+      <p>
+        Access to clean water reduces disease, improves education, empowers women, and builds stronger communities. It’s the foundation of everything else.
+      </p>
+    </div>
+  </section>
+
+  <!-- DONATE SECTION -->
+  <section class="donate-section" id="donate">
+    <div class="container fade-in">
+      <h2>Make Your Impact</h2>
+      <p>Skip one coffee. Give one life. Every donation matters.</p>
+      <form class="donate-box">
+        <input type="text" placeholder="Donate Your Coffee Money" disabled />
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Charity:Water. All rights reserved.</p>
+    <div class="container footer-content">
+      <p>© 2025 Charity:Water. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
