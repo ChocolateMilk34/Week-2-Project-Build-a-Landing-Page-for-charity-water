@@ -14,6 +14,7 @@ h1, h2, h3 {
 
 p {
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 button {
@@ -28,52 +29,46 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
-header {
+.navbar {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   border-bottom: 4px solid #fcd900;
-}
-
-header.navbar {
-  padding: 20px 40px;
-  align-items: center;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  height: 80px; /* Increase from 50px */
-  width: auto;
+  flex-wrap: wrap;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
-.brand-name {
-  font-size: 1.5rem;
+.logo {
+  height: 48px;
+  width: auto;
+}
+
+.brand {
+  font-size: 1.4rem;
   font-weight: 600;
-  margin: 0;
 }
 
-.main-nav a {
-  margin-left: 20px;
+.nav-right {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-right a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Hero Section */
@@ -88,8 +83,12 @@ header.navbar {
 }
 
 .hero-content {
-  max-width: 500px;
+  max-width: 480px;
   color: white;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
 }
 
 .donate-box {
@@ -104,14 +103,11 @@ header.navbar {
 }
 
 .hero-image img {
-  max-width: 300px;
-  width: 100%;
+  width: 280px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .caption {
   margin-top: 10px;
@@ -127,7 +123,7 @@ header.navbar {
   text-align: center;
 }
 
-.impact-stats {
+.impact-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -135,12 +131,13 @@ header.navbar {
   margin-top: 30px;
 }
 
-.stat {
+.card {
   background: white;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  max-width: 250px;
+  max-width: 220px;
+  text-align: center;
 }
 
 /* Learn Section */
@@ -174,7 +171,29 @@ footer {
     padding: 40px 20px;
   }
 
-  .impact-stats {
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .impact-cards {
     flex-direction: column;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-left {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    justify-content: center;
+    text-align: center;
   }
 }
