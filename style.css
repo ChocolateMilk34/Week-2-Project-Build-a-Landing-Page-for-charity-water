@@ -41,6 +41,11 @@ header {
   border-bottom: 4px solid #fcd900;
 }
 
+header.navbar {
+  padding: 20px 40px;
+  align-items: center;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -50,6 +55,12 @@ header {
 .logo {
   height: 80px; /* Increase from 50px */
   width: auto;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .brand-name {
